@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  font-size: 62.5%;
+  
+}
+
+
+
+@media (min-width:768px) and (max-width:998px){
+  html{
+    font-size: 55%;
+    background-color: blue;
+  }
+}
+
+@media(min-width:400px) and (max-width:768px){
+  html{
+    font-size: 45%;
+    background-color: green;
+  }
+}
+
+@media(max-width:400px){
+  html{
+    font-size: 35%;
+    background-color: yellow;
+  }
+}
