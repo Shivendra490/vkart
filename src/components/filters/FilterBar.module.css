@@ -1,12 +1,13 @@
 .filterWrapper{
-    width:25rem;
-    background-color: grey;
-    position: fixed;
-    transition: width 2s;
+    width:27rem;
+    background-color: #1f1f1f;
+    /* position: fixed; */
+    /* transition: width 2s; */
     display: flex;
     flex-direction: column;
     gap:0.5rem;
     height:90vh;
+    align-items: center;
     
 }
 
@@ -14,6 +15,7 @@
     width:25rem;
     padding:1rem;
     font-size: 2rem;
+    border-radius: 1rem;
 
 }
 
@@ -21,11 +23,13 @@
     width:25rem;
     padding:1rem;
     font-size: 2rem;
+    border-radius: 1rem;
 }
 
 
 .minMaxWrapper{
     display: flex;
+    width:25rem;
 }
 
 .sortWrapper{
@@ -36,11 +40,14 @@
     font-size: 2rem;
     background-color: white;
     border:1px solid grey;
+    border-radius: 1rem;
+   
 }
 
 .sortWrapper .label{
     display:flex;
     justify-content: space-between;
+    
 
 }
 
@@ -53,6 +60,9 @@
     width:100%;
     height:100%;
     background-color: blue;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
 }
 
 .filterWrapper .cross{
@@ -63,17 +73,18 @@
     padding:1rem;
     font-size: 2.5rem;
     font-weight: 600;
+    color:white;
     
 }
 
-.showFilter{
+/* .showFilter{
     left:0rem;
     transition: width 2s;
 }
 .removeFilter{
     left:-25rem;
     transition: width 2s;
-}
+} */
 
 /* @media (max-width:400px){
     .filterWrapper{

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faEnvelope,
   faBars,
@@ -15,7 +16,7 @@ const NavBar = () => {
       <div className={styles.logo}>
         <img
           className={styles.logoImg}
-          src="../../../public/vite.svg"
+          src="https://media.istockphoto.com/id/1180882238/vector/success-logo.jpg?s=612x612&w=0&k=20&c=brO28PRCR_73Oj-qVIGDzYxfDwZj17t7VrLb-JiGH2Q="
           alt="logo"
         />
       </div>
@@ -23,15 +24,15 @@ const NavBar = () => {
         <div className={styles.home}>Home</div>
         <div className={styles.aboutus}>About us</div>
         <div className={styles.fav}>
-          <FontAwesomeIcon icon={faHeart} style={{ color: "#f02424" }} />
+          <FontAwesomeIcon icon={faHeart} style={{ color: "#d10aoa" }} />
           <div className={styles.badge}>12</div>
         </div>
         <div className={styles.cartIconWrapper}>
           <FontAwesomeIcon icon={faCartShopping} style={{ color: "#d10aoa" }} />
-          <div className={styles.badge}>1</div>
+          <div className={styles.badge}>10</div>
         </div>
         <div className={styles.avatar}>
-          <FontAwesomeIcon icon={faUserTie} style={{ color: "#e60a0a" }} />
+          <FontAwesomeIcon icon={faUserTie} style={{ color: "#d10aoa" }} />
         </div>
       </div>
       <div className={styles.barWrapper}>

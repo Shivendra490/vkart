@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import styles from "./FilterBar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faXmark
+    
+  } from "@fortawesome/free-solid-svg-icons";
 
 const FilterBar = () => {
     const [isShowFilter,setIsShowFilter]=useState(true)
@@ -10,7 +15,7 @@ const FilterBar = () => {
     <div className={`${styles.filterWrapper} ${isShowFilter ? styles.showFilter :styles.removeFilter}`}>
         <div className={styles.cross}>
             <div>Filters</div>
-            <div onClick={removeFilter}>*</div>
+            <div onClick={removeFilter}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
       <div className={styles.searchWrapper}>
         <input
@@ -43,15 +48,18 @@ const FilterBar = () => {
         </select>
       </div>
       <div className={styles.sortWrapper}>
-        <div>Sort : </div>
-        <div className={styles.label}>
+        <div>Sort Price : </div>
+        <hr/>
+        <label id='lth' className={styles.label}>
+         
           <span>Low to high</span>
-          <input type="radio" name="sort" />
-        </div>
-        <div className={styles.label}>
+          <input type="radio" name="sort" id='lth'/>
+        </label>
+        
+        <label htmlFor='htl' className={styles.label}>
           <span>High to Low</span>
-          <input type="radio" name="sort" />
-        </div>
+          <input type="radio" name="sort" id='htl' />
+        </label>
       </div>
       <div className={styles.resetWrapper}>
         <button className={styles.reset}>Reset Filters</button>

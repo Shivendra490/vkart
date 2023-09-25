@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 
+
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import FilterBar from "./components/filters/FilterBar";
+import Products from "./components/products/Products";
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <FilterBar/>
+    <Products/>
     </>
   );
 }
