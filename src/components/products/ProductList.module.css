@@ -1,26 +1,8 @@
 .productListWrapper{
-    /* display:grid; */
+    display:grid;
     grid-template-columns: repeat(auto-fill,minmax(26rem,1fr));
     
     padding:1rem 1rem 1rem 4rem;
-    gap:1rem; 
+    gap:2rem; 
     flex:1;
-}
-
-.productCard{
-    /* width:32rem; */
-
-    background-color: yellow;
-}
-
-
-.productImageWrapper{
-    width:12rem;
-
-}
-
-.productImage{
-    width:100%;
-    
-    /* object-fit: contain; */
 }

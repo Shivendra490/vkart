@@ -1,8 +1,9 @@
 .filterWrapper{
     width:27rem;
     background-color: #1f1f1f;
-    /* position: fixed; */
-    /* transition: width 2s; */
+    /* position: relative; */
+    /* top:10rm; */
+    transition: all  .2s ease-in-out;
     display: flex;
     flex-direction: column;
     gap:0.5rem;
@@ -77,21 +78,28 @@
     
 }
 
-/* .showFilter{
+.filterWrapper .x{
+    display:none;
+}
+
+.showFilter{
     left:0rem;
-    transition: width 2s;
+    /* transition: width 2s; */
 }
 .removeFilter{
-    left:-25rem;
-    transition: width 2s;
-} */
+    left:-30rem !important;
+    /* transition: width 2s; */
+}
 
-/* @media (max-width:400px){
+@media (max-width:400px){
     .filterWrapper{
         position:fixed;
-        left:-25rem;
+        left:0rem;
     }
-} */
+    .filterWrapper .x{
+        display:inline-block;
+    }
+}
 
 
 

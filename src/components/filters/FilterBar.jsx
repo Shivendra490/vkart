@@ -9,13 +9,14 @@ import {
 const FilterBar = () => {
     const [isShowFilter,setIsShowFilter]=useState(true)
     const removeFilter=()=>{
+      console.log('hhhhhhhh')
         setIsShowFilter(false)
     }
   return (
     <div className={`${styles.filterWrapper} ${isShowFilter ? styles.showFilter :styles.removeFilter}`}>
         <div className={styles.cross}>
             <div>Filters</div>
-            <div onClick={removeFilter}><FontAwesomeIcon icon={faXmark} /></div>
+            <div className={styles.x} onClick={removeFilter}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
       <div className={styles.searchWrapper}>
         <input
