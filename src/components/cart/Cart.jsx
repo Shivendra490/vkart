@@ -8,7 +8,7 @@ import {rupee} from "../../helper/index"
   /* <FontAwesomeIcon icon="fa-solid fa-trash" /> */
 }
 
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash,faPlus,faMinus} from "@fortawesome/free-solid-svg-icons";
 import { cartActions } from "../../store/cartSlice";
 
 // const Cart = () => {
@@ -63,11 +63,11 @@ const Cart = () => {
               <div className={styles.productPrice}>{rupee.format(product?.price)}</div>
               <div className={styles.quantityWrapper}>
                 <div className={styles.add}>
-                  <button className={styles.addRemoveBtn} onClick={()=>addToCartClickHandler(product)}>+</button>
+                  <button className={styles.addRemoveBtn} onClick={()=>addToCartClickHandler(product)}><FontAwesomeIcon icon={faPlus} /></button>
                 </div>
                 <span className={styles.qty}>{product?.totalQuantity}</span>
                 <div className={styles.remove}>
-                  <button className={styles.addRemoveBtn} onClick={()=>removeFromCartClickHandler(product?.id)}>-</button>
+                  <button className={styles.addRemoveBtn} onClick={()=>removeFromCartClickHandler(product?.id)}><FontAwesomeIcon icon={faMinus} /></button>
                 </div>
                 
                   <FontAwesomeIcon
